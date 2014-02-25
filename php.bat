@@ -1,0 +1,1 @@
+C:\wamp\bin\php\php5.4.12\php.exe -c "C:\wamp\bin\apache\Apache2.4.4\bin\php.ini" %*

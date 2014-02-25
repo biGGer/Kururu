@@ -11,7 +11,14 @@
 |
 */
 
-Route::get('/', function()
+Route::get('/', ('before' => 'auth', function()
 {
 	return View::make('hello');
+}));
+
+Route::get('users', function()
+{
+    $users = User::all();
+
+    return View::make('users')->with('users', $users);
 });
