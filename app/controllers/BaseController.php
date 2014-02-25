@@ -2,6 +2,11 @@
 
 class BaseController extends Controller {
 
+    /**
+     * The layout that should be used for responses.
+     */
+    //protected $layout = 'layout';
+
 	/**
 	 * Setup the layout used by the controller.
 	 *

@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/', ('before' => 'auth', function()
+Route::get('/', array('before' => 'auth', function()
 {
 	return View::make('hello');
 }));
+
+Route::get('login', 'AuthController@showLogin');
 
 Route::get('users', function()
 {
